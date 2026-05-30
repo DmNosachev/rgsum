@@ -171,11 +171,6 @@ sortcites=true,
 \def\iu{\ensuremath{\mathrm{i}}}
 \def\du{\ensuremath{\mathrm{d}}}
 
-\titleformat{\section}[block]{\Large\bfseries\filcenter}{}{1em}{}
-\titleformat{\subsection}[block]{\large\bfseries\flushleft}{}{0em}{}
-\titleformat{\subsubsection}[block]{\bfseries\flushleft}{}{0em}{}
-
-\titleclass{\section}{top}
 
 \titlecontents{section}
 [1em]
@@ -197,6 +192,26 @@ sortcites=true,
 {}
 {}%\hspace*{-9mm}
 {\titlerule*[0.3pc]{.}\contentspage}[\medskip]
+
+
+
+\titleformat{\section}
+ {\filcenter\Large\bfseries}
+ {}
+ {0pt}
+ {}
+
+\titleformat{\subsection}
+ {\raggedright\large\bfseries}
+ {}
+ {0pt}
+ {}
+
+\titleformat{\subsubsection}
+ {\raggedright\normalfont\bfseries}
+ {}
+ {0pt}
+ {}
 
 
 \RequirePackage[final,
